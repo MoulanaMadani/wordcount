@@ -1,0 +1,12 @@
+<h1>Welcome to the count page! </h1>                                             <a href="{% url 'home' %}">Start again!</a>
+<h2>Your text:</h2>
+{{fulltext}}
+
+<h2>counts are:{{nword}}</h2>
+
+<h3>sorted and words with own count:
+
+{% for words,counts in sorted_words %}
+{{words}}--{{counts}}<br>
+{% endfor %}</h3>
+
